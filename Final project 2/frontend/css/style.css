@@ -1,0 +1,581 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+.navbar {
+    background-image:url("../img/header.jpg");
+    height: 800px;
+    text-align: center;
+    margin-bottom: 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fluid {
+    overflow: hidden;
+    background-color: whitesmoke;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1;
+  }
+  
+  /* Navbar container */
+.menu {
+    overflow: hidden;
+  }
+  
+  /* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* The dropdown container */
+.dropdown {
+    float: center;
+    overflow: hidden;
+  }
+
+.dropbtn {
+    float: right;
+  }
+  
+  /* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color:gray;
+  }
+  
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+  }
+
+ul {
+    list-style-type:none;
+  }
+
+li{
+    float:left;/*float the li element so the menu's horizontal...*/
+    width: 120px;
+    }
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+.main-head {
+    text-transform: uppercase;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    text-align: center;
+  }
+
+.divider {
+    width: 80px;
+    background: #000;
+    height: 1px;
+    display: block;
+    margin: 20px auto;
+  }
+
+.call-to-action {
+    background: #000;
+    color: #fff;
+    padding: 50px 0;
+  }
+
+  .text-center {
+    text-transform: uppercase;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+   }
+
+.btn-cta {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0 15px;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+a {text-decoration: none;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 80px;
+  margin-right: auto;
+  margin-left: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+.h2, h2 {
+  font-size: 30px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.h6, h6 {
+  font-size: 12px;
+}
+
+p, h6, address {
+  font-family: 'Lato', sans-serif;
+  color: #777;
+}
+
+.divider.divider-sm {
+  width: 40px;
+  margin: 20px 0;
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  background: transparent;
+  border: 1px solid #000;
+  color: #000;
+}
+
+.btn {
+  border-radius: 0;
+  font-size: 13px;
+  padding: 15px 40px;
+  transition: all 0.3s;
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.btn:hover {
+  background-color: #000;
+  color: whitesmoke;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.video {
+  width: 100%;
+  text-align: center;
+  height: 500px;
+  color: #fff;
+  position: relative;
+  margin-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  isolation:isolate;
+  background-image: url(../img/keyboard.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.video::after {
+  content: '';
+  position: absolute;
+  background: black;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.paragraph {
+  padding: 50px;
+  text-transform: lowercase;
+}
+
+.table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: 50px;
+  margin-bottom: 80px;
+}
+
+th {
+  text-align: left;
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+
+.testimonial {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  color: #fff;
+  position: relative;
+  margin-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  isolation:isolate;
+  background-image: url(../img/coffe.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.testimonial::after {
+  content: '';
+  position: absolute;
+  background: black;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.single-testimonial {
+  width: 66.66666667%;
+}
+.single-testimonial p, h6 {
+  color: #ddd;
+  text-transform: uppercase;
+}
+
+.single-testimonial .fa {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 30px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.bookings {
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-left: 16.66666667%;
+  width: 66.66666667%;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 14px;
+}
+
+label  {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+  width: 30%;
+}
+
+.col {
+  display: inline-block;
+  padding: 8px;
+} 
+
+.form-group {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.show {
+  margin-top: 15px;
+}
+
+.book{
+  width: 30%;
+}
+
+.testimonial2 {
+  width: 100%;
+  text-align: center;
+  height: 300px;
+  color: #fff;
+  position: relative;
+  margin-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  isolation:isolate;
+  background-image: url(../img/band.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.testimonial2::after {
+  content: '';
+  position: absolute;
+  background: black;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.members {
+  width: 100%;
+}
+.team-member {
+  position: relative;
+  margin-bottom: 70px;
+  float: left;
+  margin: 15px;
+  width: 22%;   
+}
+
+.team-member h6 {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.description {
+  margin-right: 25px;
+  margin-left: -15px; 
+  width: 33.33333333%
+}
+
+.description h3 {
+  font-weight: bolder;
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.call-to-action h4 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.subscribe-input {
+  text-align: left;
+  width: 100%;
+  border: 0 none;
+  background: transparent;
+  opacity: 0.9;
+  border: 1px solid #fff;
+  padding: 14px;
+}
+
+.btn-light {
+  background-color:#ddd;
+}
+
+.btn-light:hover {
+  background-color: #000;
+  color: whitesmoke;
+}
+
+.modal {
+  visibility: hidden;
+}
+
+.call-to-action2 {
+  background: #000;
+  color: #fff;
+  padding: 50px 0;
+  height: 100px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: 0px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.col2 {
+  display: inline-block;
+  padding: 8px;
+  margin-right: 30px;
+} 
+
+
+
+#contactform {
+  padding: 80px;
+  
+}
+
+.fanmail {
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 180px;
+  font-size: 14px;
+}
+
+address{
+  display:inline-block;
+  margin-right:80px;
+  margin-left: 80px;
+  margin-bottom: 70px;
+}
+address .fa {
+  display: block;
+  font-size: 33px;
+  margin-bottom: 20px;
+}
+
+
+.align {
+  width: 50%;
+  float: left;
+  margin-bottom: 80px;
+  
+}
+
+.form-control {
+  display: block;
+  width: 80%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-color: #8a8587;
+  padding: 14px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  
+}
+
+textarea.form-control {
+  height: 100px;
+}
+
+.btn-send {
+  margin-left: 50%;
+}
+
+
+
+
+
+
+
+
+footer {
+  background: #000;
+  padding: 80px 0;
+  display: block;
+}
+
+.logo-footer {
+  margin-bottom: 40px;
+  vertical-align: middle;
+}
+
+ul.social {
+  list-style: none;
+  margin-top: 20px;
+}
+
+ul.social li {
+  display: inline-block;
+  width: 30px;
+}
+
+ul.social li a {
+  text-decoration: none;
+}
+
+footer a {
+  color: #fff;
+  font-weight: bold;
+}
+
+footer, footer p {
+  color: #fff;
+  text-transform: none;
+  margin-top: 40px;
+  text-align: center;
+}
+
+ul.social li .fa:hover {
+  display: inline-block;
+  width: 30px;
+  padding: 6.5px 1px;
+  background-color: #fff;
+  color: #000;
+  transition: background-color 1s ease;
+  border-radius: 25px;
+}
+
