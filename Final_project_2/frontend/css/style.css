@@ -463,20 +463,15 @@ label  {
   margin-right: 30px;
 } 
 
-
-
 #contactform {
-  padding: 80px;
-  
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
-.fanmail {
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 180px;
-  font-size: 14px;
+.address-block{
+    display: flex;
+    justify-content: center;
 }
 
 address{
@@ -485,26 +480,34 @@ address{
   margin-left: 80px;
   margin-bottom: 70px;
 }
+
 address .fa {
   display: block;
   font-size: 33px;
   margin-bottom: 20px;
 }
 
-
-.align {
-  width: 50%;
-  float: left;
-  margin-bottom: 80px;
-  
+.address-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-.form-control {
-  display: block;
-  width: 80%;
+.half-width {
+  width: 50%;
+  float: left;
+}
+
+.contact-form-column {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.contact-form-input {
+  width: 95%;
   height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
   line-height: 1.42857143;
   color: #555;
   background-color: #fff;
@@ -517,20 +520,13 @@ address .fa {
   
 }
 
-textarea.form-control {
+textarea.contact-form-input {
   height: 100px;
 }
 
 .btn-send {
-  margin-left: 50%;
+  float: right;
 }
-
-
-
-
-
-
-
 
 footer {
   background: #000;

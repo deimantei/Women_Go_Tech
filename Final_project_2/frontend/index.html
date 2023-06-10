@@ -336,7 +336,6 @@
 </section>
 
 <section id="contact">
-    <div class="fanmail">
             <div class="contact">
                 <div class="title text-center">
                     <h2>Fan mail</h2>
@@ -347,21 +346,22 @@
                     </div>
                 </div>
             </div>
-        <div>
-            <address class="information">
-            <span>
+        <div class="address-block">
+            <address class="address-item">
              <i class="fa fa-envelope"></i>
-             info@theband.com
+             <span>
+                info@theband.com
             </span>
          </address>
-         <address>
-            <span>
+         <address class="address-item">
                 <i class="fa fa-home"></i>
+             <span>
+
                 A. Strazdelio g. 1, <br>
                 Vilnius 02102
             </span>
         </address>
-        <address>
+        <address class="address-item">
             <i class="fa fa-phone"></i>
             <span>+370 - 123 -456 - 789</span>
         </address>
@@ -369,27 +369,20 @@
 
 
     <form method="post" action="http://localhost:5000/add-message" id="contactform">
-        <div class="align">
-            <div>
-                <div class="form-group">
-                    <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject*" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" name="name" id="name" class="form-control" placeholder="Name*" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" name="email" id="email" class="form-control" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" required>
-                </div>
+        <div class="half-width">
+            <div class="contact-form-column">
+                <input type="text" name="subject" id="subject" class="contact-form-input" placeholder="Subject*" required>
+                <input type="text" name="name" id="name" class="contact-form-input" placeholder="Name*" required>
+                <input type="email" name="email" id="email" class="contact-form-input" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" required>
             </div>
         </div>
-        <div class="align">
-                <div class="form-group">
-                    <textarea class="form-control" name="message" id="message" placeholder="Message goes here..." required></textarea>
-                </div>
+        <div class="half-width">
+            <div class="contact-form-column">
+                <textarea class="contact-form-input" name="message" id="message" placeholder="Message goes here..." required></textarea>
                 <button type="submit" class="btn btn-primary btn-send" onClick="contact_function()">Send</button>
+            </div>
         </div>
     </form>
-</div>
 </section>
 
 <footer>
