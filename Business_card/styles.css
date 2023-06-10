@@ -25,7 +25,7 @@ body {
 }
 
 .dotted {
-    border: 5px dotted blueviolet;
+    border: 5px dotted red;
 }
 
 .transition {
