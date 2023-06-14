@@ -10,7 +10,6 @@
     <meta name="keywords" content="HTML5, Bootstrap 3, CSS3, javascript, Responsive, Mobile">
     <meta name="author" content="Deimante Stankunaite"/>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/custom.js"></script>
     <script src="https://kit.fontawesome.com/9df0a0a2be.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -69,8 +68,6 @@
                 <a href="#portfolio" class="btn btn-primary">Listen to our songs</a>
             </div>
             <div>
-                <br>
-                <br>
                 <img src="img/typewriter.jpg" class="img-responsive">
             </div>
     </div>
@@ -121,8 +118,37 @@
             <div class="divider"></div>
             <div class="paragraph">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quidem ratione aspernatur a obcaecati aperiam ea natus libero omnis porro?</p>
+            </div>
         </div>
+    
+        <div>
+        <div class="filter_buttons">
+            <button class="btn btn-gallery active" data-name="all">All</button>
+            <button class="btn btn-gallery" data-name="festival">Summer festival</button>
+            <button class="btn btn-gallery" data-name="finland">Finland 2021</button>
+            <button class="btn btn-gallery" data-name="acoustic">Acoustic</button>
         </div>
+        <div class="filterable_cards">
+        <div class="card" data-name="festival">
+            <img src="img/portfolio/festival1.jpg" alt="colorful scene with lots of dancing fans around">
+        </div>
+        <div class="card" data-name="finland">
+            <img src="img/portfolio/finland1.jpg" alt="drums">
+        </div>
+        <div class="card" data-name="finland">
+            <img src="img/portfolio/finland2.jpg" alt="a stage with lots of lights">
+        </div>
+        <div class="card" data-name="acoustic">
+            <img src="img/portfolio/acoustic1.jpg" alt="man sitting and playing a guitar">
+        </div>
+        <div class="card" data-name="all">
+            <img src="img/portfolio/concert1.jpg" alt="dancing people with their arms raised">
+        </div>
+        <div class="card" data-name="all">
+            <img src="img/portfolio/concert2.jpg" alt="an empty colorful stage">
+        </div>
+
+    </div>
    <!-- <div class="container" id="portfolio-grid">
         <nav class="centered-pills clearfix">
             <ul class="nav nav-pills" >
@@ -386,23 +412,17 @@
 </section>
 
 <footer>
-    <div class="container">
-        <div>
-            <img src="img/logo-white.png" class="logo-footer" />
-            
-            <ul class="social">
-                <li class="wow"><a href="https://www.facebook.com/diamonds.de" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                <li class="wow"><a target="_blank"><i class="fa fa-twitter"></i></a></li>
-                <li class="wow"><a href="https://www.instagram.com/d.e.i.m.a.n.t.e/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                <li class="wow"><a target="_blank"><i class="fa fa-behance"></i></a></li>
-                <li class="wow"><a target="_blank"><i class="fa fa-pinterest"></i></a></li>
-                <li class="wow"><a target="_blank"><i class="fa fa-google"></i></a></li>
-            </ul>
-        <div class="paragraph">
-            <p>Web page created by Deimantė Stankūnaitė</p>
-        </div>
-        </div>
-    </div>
+    <img src="img/logo-white.png" class="logo-footer" />
+    <ul class="social">
+        <li class="wow"><a href="https://www.facebook.com/diamonds.de" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li class="wow"><a target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li class="wow"><a href="https://www.instagram.com/d.e.i.m.a.n.t.e/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li class="wow"><a target="_blank"><i class="fa fa-behance"></i></a></li>
+        <li class="wow"><a target="_blank"><i class="fa fa-pinterest"></i></a></li>
+        <li class="wow"><a target="_blank"><i class="fa fa-google"></i></a></li>
+    </ul>
+    <p>Web page created by Deimantė Stankūnaitė</p>
 </footer>
+<script src="js/custom.js"></script>
 </body>
 </html>
