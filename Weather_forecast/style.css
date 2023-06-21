@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    background-color: antiquewhite;
+    font-family: Arial, sans-serif;
+}
+header {
+    margin: 50px;
+}
+button {
+    background-color: white;
+    padding: 5px 9px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+input {
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px 9px;
+}
+::placeholder {
+    color:rgb(92, 24, 156);
+}
+#weather-info {
+    margin-top: 20px;
+}
