@@ -29,7 +29,7 @@ window.onload = () => {
     
     userInputs.push(
       prompt(
-        questionArray[questionCounter] + `... (${questionTotal} questions left)`
+        questionArray[questionCounter] + `. (${questionTotal} questions left)`
       )
     );
     questionCounter++;
