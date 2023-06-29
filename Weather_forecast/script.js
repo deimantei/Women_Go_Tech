@@ -9,7 +9,7 @@ submitBtn.addEventListener('click', () => {
     const city = cityInput.value;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
-    fetch(url)
+    fetch(url) 
         .then (response => response.json())
         .then(data => {
             const weather = data.weather[0].description;
@@ -25,10 +25,10 @@ submitBtn.addEventListener('click', () => {
             //const time = new Date(data.dt * 1000).toLocaleTimeString();
             //const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString();
 
-            const sunset = new Date((data.sys.sunset + data.timezone) * 1000);
-            var hours = data.getHours();
-            var minutes = data.getMinutes();
-            var seconds = data.getSeconds();
+            const sunset = new Date((data.sys.sunset) * 1000);
+            var hours = sunset.getHours();
+            var minutes = sunset.getMinutes();
+            var seconds = sunset.getSeconds();
             // will display time in 21:00:00 format
             var formattedTime = hours + ':' + minutes + ':' + seconds;
 
@@ -37,10 +37,10 @@ submitBtn.addEventListener('click', () => {
 
             weatherInfo.innerHTML = `
             <p><strong>City: </strong>${city}</p>
-            <p><strong>Your current time: </strong>${time}</p>
+            
             <p><strong>Weather: </strong>${weather}</p>
             <p><strong>Temperature: </strong>${temperature}°C</p>
-            <p><strong>Sunset*: </strong>${sunset}</p>
+            <p><strong>Sunset*: </strong>${formattedTime}</p>
             <p><strong>Cloudiness: </strong>${clouds}%</p>
             <p><strong>Wind speed: </strong>${wind} m/s</p>
             <p>*in your local time</p>

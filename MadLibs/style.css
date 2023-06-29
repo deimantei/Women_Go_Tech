@@ -2,3 +2,7 @@ body {
 background: linear-gradient(#a2d2ff,#9795ef );
 height: 700px;
 }
+
+.answer {
+    color: #00008B;
+}
