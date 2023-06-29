@@ -16,10 +16,23 @@ submitBtn.addEventListener('click', () => {
             const temperature = Math.round(data.main.temp - 273.15);
             const clouds = data.clouds.all;
             const wind = data.wind.speed;
+
+
+
+
             //How to set time to that place local time?
             //const timeZone = (data.timezone / 3600).toString();
-            const time = new Date(data.dt * 1000).toLocaleTimeString();
-            const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString();
+            //const time = new Date(data.dt * 1000).toLocaleTimeString();
+            //const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString();
+
+            const sunset = new Date((data.sys.sunset + data.timezone) * 1000);
+            var hours = data.getHours();
+            var minutes = data.getMinutes();
+            var seconds = data.getSeconds();
+            // will display time in 21:00:00 format
+            var formattedTime = hours + ':' + minutes + ':' + seconds;
+
+
 
 
             weatherInfo.innerHTML = `
