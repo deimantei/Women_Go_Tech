@@ -17,9 +17,6 @@ submitBtn.addEventListener('click', () => {
             const clouds = data.clouds.all;
             const wind = data.wind.speed;
 
-
-
-
             //How to set time to that place local time?
             //const timeZone = (data.timezone / 3600).toString();
             //const time = new Date(data.dt * 1000).toLocaleTimeString();
@@ -31,9 +28,6 @@ submitBtn.addEventListener('click', () => {
             var seconds = sunset.getSeconds();
             // will display time in 21:00:00 format
             var formattedTime = hours + ':' + minutes + ':' + seconds;
-
-
-
 
             weatherInfo.innerHTML = `
             <p><strong>City: </strong>${city}</p>
