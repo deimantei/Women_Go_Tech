@@ -1,13 +1,16 @@
 body {
-    background: linear-gradient(#e0218a, #EFB0C9 );
     font-family: 'Barbie', sans-serif;
     text-align: center;
-    
-    
+    margin: 0;
 }
 
+#intro {
+    background: linear-gradient(#e0218a, #EFB0C9);
+}
 h1 {
     font-size: 100px;
+    margin-top: 0;
+    padding-top: 50px;
 }
 h2 {
     font-size: 40px;
@@ -23,13 +26,11 @@ h3 {
     border: solid 5px black;
     border-radius: 50%;
     width: 12%;
-    height: 90px;
+    height: 40%;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 0 1px black;
     background-color: #e0218a;
-    
-    
 }
 
 #pink-bubble:hover {
@@ -48,4 +49,16 @@ h3 {
 
 a{
     color: black;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: linear-gradient(#e0218a, #EFB0C9);
+}
+img {
+    width: 20%;
+    padding: 5px; 
+    margin: 40px 40px;;   
 }
