@@ -1,6 +1,51 @@
 body {
-    background-color: pink;
+    background: linear-gradient(#e0218a, #EFB0C9 );
     font-family: 'Barbie', sans-serif;
     text-align: center;
-    font-size: 50px;
+    
+    
+}
+
+h1 {
+    font-size: 100px;
+}
+h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#pink-bubble {
+    border: solid 5px black;
+    border-radius: 50%;
+    width: 12%;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 1px black;
+    background-color: #e0218a;
+    
+    
+}
+
+#pink-bubble:hover {
+    background-image: url(barbie.gif);
+    background-size:cover;
+    background-position: 5px;
+}
+
+#link {
+    background-color: #EC4399;
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+a{
+    color: black;
 }
