@@ -3,6 +3,12 @@ background: linear-gradient(#a2d2ff,#9795ef );
 height: 700px;
 }
 
-.answer {
+h1 {
     color: #00008B;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+#story-info {
+        text-align: center;
 }
