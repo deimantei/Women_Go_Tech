@@ -17,17 +17,17 @@ submitBtn.addEventListener('click', () => {
             const clouds = data.clouds.all;
             const wind = data.wind.speed;
             
-
             const timeZone = data.timezone;
+            var offset = new Date().getTimezoneOffset()*60;
 
-            const currentTime = new Date ((data.dt  + timeZone - 10800)* 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+            const currentTime = new Date ((data.dt  + timeZone + offset)* 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
 
             //const sunset = new Date((data.sys.sunset + timeZone - 10800) * 1000); // Subtract 10800 seconds (3 hours) for Lithuania's time zone offset
             //const formattedTime = sunset.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
             
             
-            const sunset = new Date((data.sys.sunset + timeZone - 10800) * 1000);
+            const sunset = new Date((data.sys.sunset + timeZone + offset) * 1000);
             var hours = sunset.getHours();
             var minutes = sunset.getMinutes();
             var seconds = sunset.getSeconds();
