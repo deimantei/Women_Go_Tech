@@ -233,6 +233,7 @@ p {
   margin-left: 0px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 50px;
   isolation:isolate;
   background-image: url(../img/keyboard.jpg);
   background-repeat: no-repeat;
@@ -302,7 +303,7 @@ th {
   width: 66.66666667%;
 }
 .single-testimonial p, h6 {
-  color: #ddd;
+  color: rgb(172, 167, 168);
   text-transform: uppercase;
 }
 
@@ -468,6 +469,7 @@ label  {
     display: flex;
     padding-left: 80px;
     padding-right: 80px;
+    margin-bottom: 50px;
 }
 
 .address-block{
@@ -510,7 +512,6 @@ address .fa {
   width: 95%;
   height: 34px;
   line-height: 1.42857143;
-  color: #555;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -548,6 +549,10 @@ ul.social {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+
+li.wow {
+  text-align: center;
 }
 
 ul.social li {
