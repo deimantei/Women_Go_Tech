@@ -23,16 +23,16 @@ submitBtn.addEventListener('click', () => {
             const currentTime = new Date ((data.dt  + timeZone - 10800)* 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
 
 
-            const sunset = new Date((data.sys.sunset + timeZone - 10800) * 1000); // Subtract 10800 seconds (3 hours) for Lithuania's time zone offset
-            const formattedTime = sunset.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+            //const sunset = new Date((data.sys.sunset + timeZone - 10800) * 1000); // Subtract 10800 seconds (3 hours) for Lithuania's time zone offset
+            //const formattedTime = sunset.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
             
             
-            //const sunset = new Date((data.sys.sunset) * 1000);
-            //var hours = sunset.getHours();
-            //var minutes = sunset.getMinutes();
-            //var seconds = sunset.getSeconds();
+            const sunset = new Date((data.sys.sunset + timeZone - 10800) * 1000);
+            var hours = sunset.getHours();
+            var minutes = sunset.getMinutes();
+            var seconds = sunset.getSeconds();
             // will display time in 21:00:00 format
-            //var formattedTime = hours + ':' + minutes + ':' + seconds;
+            var formattedTime = hours + ':' + minutes + ':' + seconds;
 
             weatherInfo.innerHTML = `
             <p><strong>City: </strong>${city}</p>
