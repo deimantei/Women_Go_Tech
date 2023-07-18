@@ -1,0 +1,29 @@
+body{
+    background-color: #7F5539;
+    font-family: montserrat;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.btn {
+    border: solid 10px #E6CCB2;
+    border-radius: 3px;
+    padding: 50px 30px;
+    margin: 40px;
+    width: 20%;
+    text-align: center;
+    background-color: #EDE0D4;
+}
+.btn:active {
+    transform: scale(1.1);
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 150%;
+}
