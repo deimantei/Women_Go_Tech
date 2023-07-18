@@ -23,3 +23,7 @@ input {
 #weather-info {
     margin-top: 50px;
 }
+
+.time {
+    color: rgb(182, 46, 46);
+}

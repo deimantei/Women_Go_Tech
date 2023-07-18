@@ -16,28 +16,32 @@ submitBtn.addEventListener('click', () => {
             const temperature = Math.round(data.main.temp - 273.15);
             const clouds = data.clouds.all;
             const wind = data.wind.speed;
+            
 
-            //How to set time to that place local time?
-            //const timeZone = (data.timezone / 3600).toString();
-            //const time = new Date(data.dt * 1000).toLocaleTimeString();
-            //const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString();
+            const timeZone = data.timezone;
 
-            const sunset = new Date((data.sys.sunset) * 1000);
-            var hours = sunset.getHours();
-            var minutes = sunset.getMinutes();
-            var seconds = sunset.getSeconds();
+            const currentTime = new Date ((data.dt  + timeZone - 10800)* 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+
+            const sunset = new Date((data.sys.sunset + timeZone - 10800) * 1000); // Subtract 10800 seconds (3 hours) for Lithuania's time zone offset
+            const formattedTime = sunset.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+            
+            
+            //const sunset = new Date((data.sys.sunset) * 1000);
+            //var hours = sunset.getHours();
+            //var minutes = sunset.getMinutes();
+            //var seconds = sunset.getSeconds();
             // will display time in 21:00:00 format
-            var formattedTime = hours + ':' + minutes + ':' + seconds;
+            //var formattedTime = hours + ':' + minutes + ':' + seconds;
 
             weatherInfo.innerHTML = `
             <p><strong>City: </strong>${city}</p>
-            
+            <p class="time"><strong>Time*: </strong>${currentTime}</p>
             <p><strong>Weather: </strong>${weather}</p>
             <p><strong>Temperature: </strong>${temperature}°C</p>
-            <p><strong>Sunset*: </strong>${formattedTime}</p>
+            <p class="time"><strong>Sunset*: </strong>${formattedTime}</p>
             <p><strong>Cloudiness: </strong>${clouds}%</p>
             <p><strong>Wind speed: </strong>${wind} m/s</p>
-            <p>*in your local time</p>
             `;
         })
         .catch (error => {
