@@ -28,9 +28,9 @@ submitBtn.addEventListener('click', () => {
             
             
             const sunset = new Date((data.sys.sunset + timeZone + offset) * 1000);
-            var hours = sunset.getHours();
-            var minutes = sunset.getMinutes();
-            var seconds = sunset.getSeconds();
+            var hours = sunset.getHours().toString().padStart(2, '0');
+            var minutes = sunset.getMinutes().toString().padStart(2, '0');
+            var seconds = sunset.getSeconds().toString().padStart(2, '0');
             // will display time in 21:00:00 format
             var formattedTime = hours + ':' + minutes + ':' + seconds;
 
