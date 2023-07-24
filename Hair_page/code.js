@@ -54,11 +54,6 @@ let currentIndex = 1;
 
 const changeNumber = document.querySelector("#change-number");
 
-
-
-
-
-
 //Checking if a checkbox is checked
 const btn = document.querySelector('#final-btn');
 const changeCart = document.querySelector('#change-cart');
@@ -66,10 +61,16 @@ const changeCart = document.querySelector('#change-cart');
 btn.addEventListener('click', (event) => {
   let checkboxes = document.querySelectorAll('input[name="product"]:checked');
   let values = [];
+  let totalPrice = 0;
   checkboxes.forEach((checkbox) => {
     values.push(checkbox.value);
+    const price = parseFloat(checkbox.getAttribute('data-price'));
+    totalPrice += price;
   });
 
+  
   let listItems = values.map(value => `<li>${value}</li>`).join('');
-  changeCart.innerHTML = `<p>Your shopping cart:</p><ul>${listItems}</ul>`;
+  changeCart.innerHTML = `Your shopping cart:<ul>${listItems}</ul>
+  Total Price:<strong> ${totalPrice} Eur<strong>`;
 });
+
