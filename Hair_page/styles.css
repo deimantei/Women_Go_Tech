@@ -28,6 +28,12 @@ body {
     border-radius: 8px;
 }
 
+.cart {
+    width: 100%;
+    overflow-x: scroll;
+   padding: 3% 8%;
+}
+
 .slide img {
     width: 100%;
     height: 100%;
@@ -83,6 +89,7 @@ label {
 .cart {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 0;
 }
 
 .cart h2 {
@@ -93,4 +100,44 @@ label {
     font-family: Garamond;
     font-size: 18px;
     font-weight: normal;
+}
+
+input {
+    width: 20%;
+    margin: auto;
+    text-align: center;
+}
+.payments {
+    display: flex;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+}
+#paymentMethod {
+    flex-direction: row;
+    padding: 5%;
+}
+
+#payment-btn, #final-btn {
+    width: 30%;
+    height: 12%;
+    padding: 15px 10px;
+    padding-bottom: 30px;
+    border: none;
+    background-color: #d5619d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5%;
+    margin-top: 3%;
+}
+
+.selectedPaymentMethod {
+    border: 5px solid #d5619d;
+    border-radius: 5%;
+}
+
+.warning-hidden {
+    display: none;
 }

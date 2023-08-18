@@ -59,18 +59,87 @@ const btn = document.querySelector('#final-btn');
 const changeCart = document.querySelector('#change-cart');
 
 btn.addEventListener('click', (event) => {
-  let checkboxes = document.querySelectorAll('input[name="product"]:checked');
-  let values = [];
+  let checkboxes = document.querySelectorAll('input[name="product"]');
+  let productNames = [];
   let totalPrice = 0;
   checkboxes.forEach((checkbox) => {
-    values.push(checkbox.value);
-    const price = parseFloat(checkbox.getAttribute('data-price'));
-    totalPrice += price;
+    let quantity = checkbox.value;
+     if (quantity > 0) {
+        const price = parseFloat(checkbox.getAttribute('data-price'));
+        const name = checkbox.getAttribute('data-name');
+        productNames.push(name + " (" + quantity + " x " + price + " Eur)");
+        totalPrice += price * quantity;
+     }
   });
 
-  
-  let listItems = values.map(value => `<li>${value}</li>`).join('');
+  let listItems = productNames.map(name => `<li>${name}</li>`).join('');
   changeCart.innerHTML = `Your shopping cart:<ul>${listItems}</ul>
   Total Price:<strong> ${totalPrice} Eur<strong>`;
 });
 
+
+const paymentBtn = document.querySelector('#payment-btn');
+paymentBtn.addEventListener('click', (event) => {
+    const warning = document.querySelector('#payment-warning');
+    warning.classList.remove("warning-hidden");
+})
+
+
+var selectedPaymentMethod;
+const visaBtn = document.querySelector('#visa');
+const paypalBtn = document.querySelector('#paypal');
+const mastercardBtn = document.querySelector("#mastercard");
+const revolutBtn = document.querySelector("#revolut");
+const paymentButtons = [visaBtn, paypalBtn, mastercardBtn, revolutBtn];
+
+visaBtn.addEventListener('click', (event) => {
+    selectedPaymentMethod = "visa";
+    visaBtn.classList.add("selectedPaymentMethod");
+
+    paymentButtons.forEach((button) => {
+        if (button.id !== "visa") {
+            button.classList.remove("selectedPaymentMethod");
+        }
+    })
+
+    console.log({selectedPaymentMethod});
+});
+
+paypalBtn.addEventListener('click', (event) => {
+    selectedPaymentMethod = "paypal";
+    paypalBtn.classList.add("selectedPaymentMethod");
+
+    paymentButtons.forEach((button) => {
+        if (button.id !== "paypal") {
+            button.classList.remove("selectedPaymentMethod");
+        }
+    })
+    
+    console.log({selectedPaymentMethod});
+});
+
+mastercardBtn.addEventListener('click', (event) => {
+    selectedPaymentMethod = "mastercard";
+    mastercardBtn.classList.add("selectedPaymentMethod");
+
+    paymentButtons.forEach((button) => {
+        if (button.id !== "mastercard") {
+            button.classList.remove("selectedPaymentMethod");
+        }
+    })
+    
+    console.log({selectedPaymentMethod});
+});
+
+revolutBtn.addEventListener('click', (event) => {
+    selectedPaymentMethod = "revolut";
+    revolutBtn.classList.add("selectedPaymentMethod");
+
+    paymentButtons.forEach((button) => {
+        if (button.id !== "revolut") {
+            button.classList.remove("selectedPaymentMethod");
+        }
+    })
+    
+    console.log({selectedPaymentMethod});
+});

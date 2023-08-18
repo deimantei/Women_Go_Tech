@@ -17,21 +17,21 @@
           <img src="Images/Shampoo/1.png" alt=""/>
           <label for="shampoo1">
             <label class="form-label">23 Eur</label>
-            <input type="checkbox" id="shampoo1" name="product" value="Magic Filler Shampoo" data-price="23">  Select
+            <input type="number" id="shampoo1" name="product" value=0 data-price="23" data-name="Magic Filler Shampoo" min="0">  Select
           </label>
         </div>
         <div class="shampoo">
           <img src="Images/Shampoo/2.jpg" alt=""/>
           <label for="shampoo2">
             <label class="form-label">14 Eur</label>
-            <input type="checkbox" id="shampoo2" name="product" value="Vital Nutrition Shampoo" data-price="14">  I want this! 
+            <input type="number" id="shampoo2" name="product" value=0 data-price="14" data-name="Vital Nutrition Shampoo"  min="0">  I want this! 
          </label>
          </div>
          <div class="shampoo">
           <img src="Images/Shampoo/3.png" alt=""/>
           <label for="shampoo3">
             <label class="form-label">23,5 Eur</label>
-            <input type="checkbox" id="shampoo3" name="product" value="Illuminate Color Shampoo" data-price="23.5">  Yes, this one! 
+            <input type="number" id="shampoo3" name="product" value=0 data-price="23.5" data-name="Illuminate Color Shampoo"  min="0">  Yes, this one! 
          </label>
         </div>
     </div>
@@ -42,21 +42,21 @@
         <img src="Images/Conditioner/1.png" alt=""/>
         <label for="conditioner1">
           <label class="form-label">17 Eur</label>
-          <input type="checkbox" id="conditioner1" name="product" value="Color Protection Conditioner" data-price="17">  Yaas 
+          <input type="number" id="conditioner1" name="product" value=0 data-price="17" data-name="Color Protection Conditioner"  min="0">  Yaas 
        </label>
       </div>
       <div class="conditioner">
         <img src="Images/Conditioner/2.png" alt=""/>
         <label for="conditioner2">
           <label class="form-label">14,5 Eur</label>
-          <input type="checkbox" id="conditioner2" name="product" value="Weightless Volume Conditioner" data-price="14.5">  That's what I'm looking for! 
+          <input type="number" id="conditioner2" name="product" value=0 data-price="14.5" data-name="Some Conditioner"  min="0">  That's what I'm looking for! 
        </label>
        </div>
        <div class="conditioner">
         <img src="Images/Conditioner/3.png" alt=""/>
         <label for="conditioner3">
           <label class="form-label">13 Eur</label>
-          <input type="checkbox" id="conditioner3" name="product" value="Hair Superfood Conditioner" data-price="13">  I need this! 
+          <input type="number" id="conditioner3" name="product" value=0 data-price="13" data-name="Hair Superfood Conditioner"  min="0">  I need this! 
        </label>
        </div>
     </div>
@@ -67,21 +67,21 @@
         <img src="Images/Masks/1.png" alt=""/>
         <label for="mask1">
           <label class="form-label">18 Eur</label>
-          <input type="checkbox" id="mask1" name="product" value="Color Protection Mask" data-price="18">  Select 
+          <input type="number" id="mask1" name="product" value=0 data-price="18" data-name="Color Protection Mask"  min="0">  Select 
        </label>
       </div>
       <div class="mask">
         <img src="Images/Masks/2.png" alt=""/>
         <label for="mask2">
           <label class="form-label">25 Eur</label>
-          <input type="checkbox" id="mask2" name="product" value="Shine Mask" data-price="25">  I want this! 
+          <input type="number" id="mask2" name="product" value=0 data-price="25" data-name="Shine Mask"  min="0">  I want this! 
        </label>
        </div>
        <div class="mask">
         <img src="Images/Masks/3.png" alt=""/>
         <label for="mask3">
           <label class="form-label">15 Eur</label>
-          <input type="checkbox" id="mask3" name="product" value="Hair Superfood Mask" data-price="15">  Yes, this one!
+          <input type="number" id="mask3" name="product" value=0 data-price="15" data-name="Hair Superfood Mask"  min="0">  Yes, this one!
        </label>
       </div>
     </div>
@@ -92,21 +92,21 @@
         <img src="Images/Cream/1.png" alt=""/>
         <label for="cream1">
           <label class="form-label">26 Eur</label>
-          <input type="checkbox" id="cream1" name="product" value="Heat Protection Cream" data-price="26">  Yaas 
+          <input type="number" id="cream1" name="product" value=0 data-price="26" data-name="Heat Protection Cream"  min="0">  Yaas 
        </label>
       </div>
       <div class="cream">
         <img src="Images/Cream/2.jpg" alt=""/>
         <label for="cream2">
           <label class="form-label">25 Eur</label>
-          <input type="checkbox" id="cream2" name="product" value="Absolute Smoothness Cream" data-price="25">  That's what I'm looking for! 
+          <input type="number" id="cream2" name="product" value=0 data-price="25" data-name="Absolute Smoothness Cream"  min="0">  That's what I'm looking for! 
        </label>
        </div>
        <div class="cream">
         <img src="Images/Cream/3.png" alt=""/>
         <label for="cream3">
           <label class="form-label">34 Eur</label>
-          <input type="checkbox" id="cream3" name="product" value="All in One Cream" data-price="34">  I need this! 
+          <input type="number" id="cream3" name="product" value=0 data-price="34" data-name="All in One Cream"  min="0">  I need this! 
        </label>
        </div>
     </div>
@@ -117,25 +117,29 @@
       <p>Did you find everything?</p>
       <button id="final-btn">Yes!</button>
       <h2 id="change-cart"> Your shopping cart:</h2>
-      <input type="checkbox" id="visa"/>
-      <label for="visa">
-        <img width="50" height="50" src="https://img.icons8.com/ios/50/F25081/visa.png" alt="visa"/>
-      </label>
-    <input type="checkbox" id="paypal"/>
-    <label for="paypal">
-      <img width="50" height="50" src="https://img.icons8.com/ios/50/F25081/paypal.png" alt="paypal"/>
-    </label>
-    <input type="checkbox" id="mastercard"/>
-    <label for="mastercard">
-      <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/FA5252/mastercard.png" alt="mastercard"/>
-    </label>
+      <div class ="payments">
+    <div id="visa">
+        <img src="https://img.icons8.com/ios/50/F25081/visa.png" alt="visa"/>
+    </div>
+    <div id="paypal">
+      <img src="https://img.icons8.com/ios/50/F25081/paypal.png" alt="paypal"/>
+    </div>
+    <div id="mastercard">
+      <img src="https://img.icons8.com/ios-filled/50/F25081/mastercard.png" alt="mastercard"/>
+   </div>
+   <div id="revolut">
+    <img src="https://img.icons8.com/ios/50/F25081/revolut.png" alt="revolut"/>
+   </div>
+    </div>
+    <div id="payment-warning" class="warning-hidden">Are you sure you have money on the selected payment method?</div>
+    <button id="payment-btn">Proceed to Payment</button>
     </div>
 
     </div>
 
      <!-- Control buttons -->
     <button class="btn btn-next">></button>
-    <button class="btn btn-prev"><
+    <button class="btn btn-prev"><</button>
   </div>
 
 <script src="code.js"></script>

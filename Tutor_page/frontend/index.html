@@ -3,17 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deimantė Stankūnaitė</title>
+    <title>Iki egzamino</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="styles/indexstyle.css">
+    <script src="https://kit.fontawesome.com/9df0a0a2be.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="intro">
-        <div class="btn">
-            <a href="portfolio.html">Portfolio</a>
-        </div>
-        <div class="btn">
-            <a href="tutoring.html">Tutor</a>
-        </div>
+    <header class="header">
+        <a href="#" class="logo"><img src="img/logo-black.jpg" alt="Black and white logo" id="logo"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></label>
+        <ul class="menu">
+            <li><a href="#">Pagrindinis</a></li>
+            <li><a href="#apiemane">Apie mane</a></li>
+            <li><a href="#schedule">Laisvi laikai</a></li>
+            <li><a  href="#mailbox">Susisiekime</a></li>
+            <li><a href="#failai">Priedai</a></li>
+          </ul>
+        </header>
+
+    <div class="main-head">
+        <h1>Iki egzamino</h1>
+        <div class="divider"></div>
     </div>
+
+    <div id="intro">
+        <h2>Ruošdamiesi atsiskaitymams, standartizuotiems testams, egzaminams pasiekiame kur kas daugiau negu tik teorines žinias. Tai ir:</h2>
+        <ul>
+            <li>disciplina siekti tikslų</li>
+            <li>atsakomybė</li>
+            <li>kritinis mąstymas</li>
+            <li>individualus darbas</li>
+            <li>ir darbas komandoje!</li>
+        </ul>
+    </div>
+
+    <div class="fade-in">
+        <h2>Mano tikslas yra mokinius įkvėpti, padrąsinti savo svajonių, dalintis žiniomis ir palydėti...iki egzamino.</h2>
+    </div>
+
+    <div id="apiemane" class="fade-in">
+        <h1>Apie mane</h1>
+        <ul>
+            <li>Matematikos egzamino įvertinimas 100%</li>
+            <li>Fizinių mokslų bakalauras Vilniaus Universitete - nanomedžiagų chemija;</li>
+            <ul>
+                <li>Studijų mainai Kelno Universitete, Vokietijoje;</li>
+                <li>Studijų mainai Aveiro Universitete, Portugalijoje;</li>
+                <li>Aukštosios matematikos įvertinimas: 10.</li>
+            </ul>
+            <li>Mokyklos pedagogikos studijos Vilniaus Universitete;</li>
+            <li>Lietuvos jaunųjų mokslininkų sąjungos vasaros stovyklų organizatorė;</li>
+            <li>Chemijos dalyko praktikantė ir integruotų pasaulio pažinimo pamokų mokytoja LSMU gimnazijoje;</li>
+            <li>Pradinių klasių mokytoja Baltic International School Tenerifėje;</li>
+            <li>Skaitmeninio turinio kūrėja "Eduka klasėje";</li>
+            <li>Matematikos vadovėlio 5-6 klasėms bendraautorė;</li>
+            <li>Instagram paskyros "Iki Egzamino" įkūrėja;</li>
+            <li>Matematikos ir chemijos korepetitorė nuo 2020 metų.</li>
+        </ul>
+    </div>
+
+    <div id="failai" class="fade-in">
+        <h2>Matematika atveria daug kelių.</h2>
+        <h3>Atsisiųsk savo pdf:</h3>
+    </div>
+
+    <div class="fade-in">
+        <h2>Chemijos žinios tampa vis aktualesnės per staigią klimato kaitą išgyvenančiame pasaulyje.</h2>
+    </div>
+
+    <div id="schedule" class="fade-in">
+        <h1>Tvarkaraštis</h1>
+        <h3>Šiuo metu laisvos vietos:</h3>
+        <h3>Laisvi laikai:</h3>
+        <!--table-->
+    </div>
+
+    <div id="mailbox" class="fade-in">
+        <div class="contact">
+            <div class="title text-center">
+                <h2>Fan mail</h2>
+                <h6>We love talking and hearing from you</h6>
+                <div class="divider"></div>
+                <div class="paragraph">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur, nesciunt.</p>
+                </div>
+            </div>
+        </div>
+    <div class="address-block">
+        <address class="address-item">
+         <i class="fa fa-envelope"></i>
+         <span>
+            info@theband.com
+        </span>
+     </address>
+     </div>
+     </div>
+
+    <form method="post" action="http://localhost:5000/add-message" id="contactform" class="fade-in">
+        <div class="half-width">
+            <div class="contact-form-column">
+                <input type="text" name="subject" id="subject" class="contact-form-input" placeholder="Subject*" required>
+                <input type="text" name="name" id="name" class="contact-form-input" placeholder="Name*" required>
+                <input type="email" name="email" id="email" class="contact-form-input" placeholder="Email*" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}" required>
+            </div>
+        </div>
+        <div class="half-width">
+            <div class="contact-form-column">
+                <textarea class="contact-form-input" name="message" id="message" placeholder="Message goes here..." required></textarea>
+                <button type="submit" class="btn btn-primary btn-send" onClick="contact_function()">Send</button>
+            </div>
+        </div>
+    </form>
+
+    
+
+    <div class="fade-in">
+        <!--instagram grid-->
+    </div>
+
+    <footer>
+        <img src="img/logo-black.jpg" class="logo-footer" />
+        <ul class="social">
+            <li class="wow"><a href="https://www.facebook.com/diamonds.de" target="_blank"><i class="fa fa-facebook" style="color: #ffffff;"></i>></i></a></li>
+            <li class="wow"><a href="https://www.instagram.com/d.e.i.m.a.n.t.e/" target="_blank"><i class="fa fa-instagram" style="color: #ffffff;"></i></a></li>
+            <li class="wow"><a href="mailto:deimantestankunaitemail@gmail.com" target="_blank"><i class="fa fa-google" style="color:#ffffff;"></i></a></li>
+        </ul>
+        <p>Deimantė Stankūnaitė 2023</p>
+    </footer>
+    <script src="scripts/code.js"></script>
 </body>
 </html>
