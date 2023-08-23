@@ -23,6 +23,13 @@ faders.forEach(fader => {
 });
 
 //Table
+function showHideRows(rowPrefix) {
+    $(".hidden_row").each(function () {
+        if ($(this).attr("id").startsWith(rowPrefix)) {
+            $(this).toggle();
+        }
+    });
+}
 
 
 //Instagram grid
