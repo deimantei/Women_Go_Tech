@@ -1,6 +1,17 @@
 body{
     font-family: montserrat;
 }
+
+.container {
+  margin: 30px;
+ padding: 15px;
+}
+
+@media (min-width: 48em) {
+  .container {
+    padding: 30px;
+  }
+}
 .header {
     background-color: #000000;
     box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
@@ -321,3 +332,16 @@ form input, form textarea {
   font-size: 16px;
 }
 
+.barrier, .barrier1 {
+  height: 31vw;
+  background-image: url(../img/stairs.jpg);
+  background-size: cover;
+  margin-left: -8px;
+  background-position: -5%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.barrier2 {
+  background-image: url(../img/kolba2.jpg);
+  background-position: -9%;
+}
