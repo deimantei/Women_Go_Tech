@@ -184,10 +184,6 @@ a {
     font-size: 150%;
 }
 
-div {
-    margin: 5%;
-}
-
 .fade-in {
     opacity: 0;
     transition: opacity 1000ms ease-in;
@@ -196,6 +192,15 @@ div {
 .fade-in.appear {
     opacity: 1;
 }
+
+.column{
+  display: flex;
+  
+}
+.about-me img {
+  width: 30vw;
+}
+
 
 footer {
     display: flex;
@@ -214,36 +219,29 @@ footer {
 .social {
     display: flex;
     list-style: none;
-    margin-left: -11%;
+    justify-content: center;
     padding-top: 2%;
 }
 
 .social li {
-    padding-right: 80%;
-
+    text-align: center;
+    display: inline-block;
+}
+.fa {
+  width: 50px;
+  height: 50px;
 }
 
 .fa:hover {
     background-color: #fff;
-    display: inline-block;
-    width: 30px;
     transition: background-color 1s ease;
     border-radius: 25px;
-    padding: 20% 40%;
-    text-align: center;
   }
 
   p {
     margin: 0;
     margin-bottom: 5%;
   }
-
-  .instagram {
-    margin-left:0;
-    padding-left: 0;
-    width: 60%;
-    padding-bottom: 5%;
-}
 
 .styled-table .mobile-table{
   border-collapse: collapse;
@@ -257,6 +255,7 @@ footer {
   background-color: #ad93b4;
     color: #ffffff;
     text-align: left;
+    width: 15%;
 }
 
 .styled-table th,
@@ -297,6 +296,9 @@ footer {
   .styled-table {
       display: none;
   }
+  .table-info {
+    width: 30%;
+  }
   .hidden_row {
     display: none;
   }
@@ -311,6 +313,7 @@ footer {
   button.btn-send {
     width: 30vw;
   }
+  
 }
 
 
@@ -339,9 +342,20 @@ form input, form textarea {
   margin-left: -8px;
   background-position: -5%;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 108%;
 }
+
 .barrier2 {
+  background-image: url(../img/sasiuvinys.jpg);
+  background-position: -9%;
+}
+
+.barrier3 {
+  background-image: url(../img/matematika.jpg);
+  background-position: -9%;
+}
+
+.barrier4 {
   background-image: url(../img/kolba2.jpg);
   background-position: -9%;
 }
