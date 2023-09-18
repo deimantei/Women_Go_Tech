@@ -1,5 +1,5 @@
-body{
-    font-family: montserrat;
+body {
+  font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -213,7 +213,7 @@ a {
   }
 
   .mobile-picture img {
-    width: 30vw;
+    width: 50vw;
   }
 
   /* Optionally hide the original picture on mobile */
@@ -338,6 +338,9 @@ footer {
 
   button.btn-send {
     width: 30vw;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   
 }
