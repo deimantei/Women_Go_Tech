@@ -198,8 +198,29 @@ a {
   
 }
 .about-me img {
-  width: 30vw;
+  width: 20vw;
+  padding-left: 50%;
+  margin-top: -30%;
 }
+
+.mobile-picture {
+  display: none;
+} 
+@media (max-width: 768px) {
+  .mobile-picture {
+      display: block; /* Show the picture on mobile */
+      text-align: center;
+  }
+
+  .mobile-picture img {
+    width: 30vw;
+  }
+
+  /* Optionally hide the original picture on mobile */
+  .about-me {
+      display: none;
+  }}
+
 
 
 footer {
@@ -220,22 +241,27 @@ footer {
     display: flex;
     list-style: none;
     justify-content: center;
-    padding-top: 2%;
+    padding: 15px;
 }
 
 .social li {
     text-align: center;
-    display: inline-block;
+    display: inline-block;   
+  
 }
-.fa {
+.social .fa {
   width: 50px;
   height: 50px;
+  color: #ffffff;
+  padding-top: 30%;
+  padding-bottom: 0;
 }
 
 .fa:hover {
     background-color: #fff;
     transition: background-color 1s ease;
     border-radius: 25px;
+    color: #000;
   }
 
   p {
@@ -358,4 +384,24 @@ form input, form textarea {
 .barrier4 {
   background-image: url(../img/kolba2.jpg);
   background-position: -9%;
+}
+
+.barrier5 {
+  background-image: url(../img/table6.jpg);
+  background-position: -9%;
+}
+
+h6 {
+  white-space:nowrap;
+  color:#ad93b4;
+  display: inline;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  padding: 8px;
 }
