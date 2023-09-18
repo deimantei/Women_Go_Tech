@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -408,3 +408,8 @@ address {
 span {
   padding: 8px;
 }
+
+@media (min-width: 768px) {
+  .mobile-divider {
+      display: none; /* Hike the divider on PC */
+  }}
