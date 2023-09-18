@@ -1,8 +1,13 @@
 const faders = document.querySelectorAll('.fade-in');
+const sliders = document.querySelectorAll('.slide-in')
+
 const appearOptions = {
     threshold: 0,
     rootMargin: "0px 0px -50px 0px"
 };
+
+
+
 
 const appearOnScroll = new IntersectionObserver(function(
     entries, 
@@ -22,6 +27,10 @@ faders.forEach(fader => {
     appearOnScroll.observe(fader);
 });
 
+
+sliders.forEach(slider => {
+    appearOnScroll.observe(slider);
+})
 //Table
 function showHideRows(rowPrefix) {
     $(".hidden_row").each(function () {

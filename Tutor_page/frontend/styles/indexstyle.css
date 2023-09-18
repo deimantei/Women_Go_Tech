@@ -193,6 +193,16 @@ a {
     opacity: 1;
 }
 
+.from-right {
+  grid-column: 3 / 4;
+  transform: translateX(200%);
+  transition: transform 800ms ease-in;
+}
+
+.from-right.appear {
+  transform: translateX(0);
+}
+
 .column{
   display: flex;
   
