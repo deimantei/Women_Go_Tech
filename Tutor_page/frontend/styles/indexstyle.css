@@ -212,6 +212,17 @@ a {
   display: flex;
   
 }
+
+.nobulletpoint {
+  list-style: none;
+}
+
+@media (max-width: 48em) {
+  #intro h2 {
+    text-align: center;
+  }
+}
+
 .about-me img {
   width: 20vw;
   padding-left: 50%;
