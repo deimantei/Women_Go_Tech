@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
+  margin:0px;
 }
 
 .container {
@@ -67,7 +68,6 @@ body {
     display: inline-block;
     float: right;
     padding: 28px 20px;
-    width: 15%;
     position: relative;
     user-select: none;
   }
@@ -200,7 +200,7 @@ a {
 
 .from-right {
   grid-column: 3 / 4;
-  transform: translateX(200%);
+  transform: translateX(50%);
   transition: transform 800ms ease-in;
 }
 
@@ -245,7 +245,6 @@ footer {
     flex-direction: column;
     background-color: #000;
     color: white;
-    margin:-5%;
     padding-top: 5%;
 }
 .logo-footer {
@@ -268,8 +267,15 @@ footer {
   width: 50px;
   height: 50px;
   color: #ffffff;
-  padding-top: 50%;
   padding-bottom: 0;
+}
+
+.fa.fa-facebook, .fa.fa-instagram, .fa.fa-google {
+  font-family: "Font Awesome 6 Brands";
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .fa:hover {
@@ -303,7 +309,7 @@ footer {
 .styled-table td,
 .mobile-table th,
 .mobile-table td {
-    padding: 12px 15px;
+    padding: 12px 20px;
     text-align: center;
 }
 
@@ -382,10 +388,9 @@ form input, form textarea {
   height: 31vw;
   background-image: url(../img/stairs.jpg);
   background-size: cover;
-  margin-left: -8px;
   background-position: -5%;
   background-repeat: no-repeat;
-  width: 108%;
+  width: 100%;
 }
 
 .barrier2 {
