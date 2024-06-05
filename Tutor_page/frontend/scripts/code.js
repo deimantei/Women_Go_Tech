@@ -50,7 +50,7 @@ function sendEmail(){
         To : 'ikiegzamino@gmail.com',
         From:'ikiegzamino@gmail.com',
         //From : document.getElementById("email").value,
-        Subject : "This is the subject",
+        Subject : "Nauja žinutė",
         Body : "Vardas: " + document.getElementById("name").value 
         + "<br> El. pašto adresas: " + document.getElementById("email").value
         + "<br> Žinutė: " + document.getElementById("message").value,         
