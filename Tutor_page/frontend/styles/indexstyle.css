@@ -312,7 +312,7 @@ footer {
 .table-info {
   background-color: #ad93b4;
     color: #ffffff;
-    text-align: left;
+    text-align: center;
     width: 15%;
 }
 
@@ -323,6 +323,19 @@ footer {
     padding: 12px 20px;
     text-align: center;
 }
+
+.table-weekend{
+  margin: 25px 0;
+  width: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-weekend th,
+.table-weekend td {
+  padding: 12px 20px;
+  text-align: center;
+}
+
 
 .styled-table tr,
 .mobile-table tr {
@@ -344,6 +357,17 @@ footer {
 .mobile-table {
   display: none;
 }
+
+.table-2025info {
+  padding: 12px 20px;
+  text-align: center;
+  margin: 25px 0;
+  width: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  font-size: 0.9em;
+  min-width: 400px;
+
+}
 /* mobile table*/
 @media (max-width: 768px) {
   .mobile-table {
@@ -351,7 +375,7 @@ footer {
   }
 
   /* Optionally hide the first table on mobile */
-  .styled-table {
+  .styled-table, .table-weekend {
       display: none;
   }
   .table-info {
