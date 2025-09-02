@@ -362,10 +362,10 @@ footer {
   padding: 12px 20px;
   text-align: center;
   margin: 25px 0;
-  width: 50%;
+  width: 30%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   font-size: 0.9em;
-  min-width: 400px;
+  min-width: 300px;
 
 }
 /* mobile table*/
