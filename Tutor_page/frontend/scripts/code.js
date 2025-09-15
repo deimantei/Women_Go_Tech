@@ -55,7 +55,7 @@ function sendEmail(){
         + "<br> El. pašto adresas: " + document.getElementById("email").value
         + "<br> Žinutė: " + document.getElementById("message").value,         
     }).then(
-      message => alert("Ačiū! Jūsų žinutė išsiųsta.")
+      message => alert("Ačiū! Jūsų žinutė išsiųsta:).")
     );
 }
 
